@@ -11,14 +11,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .cursor {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #fad2ef;
     position: fixed;
-    z-index: 9;
-    /* transition: all 0.1s linear; */
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: all 0.1s linear;
 }
 
 #main {
@@ -32,7 +37,6 @@ body {
 .page1 {
     min-height: 100vh;
     width: 100%;
-    /* background-color: red; */
 }
 
 .nav {
@@ -137,7 +141,11 @@ body {
     color: red;
 }
 
-
-.page3 h1{
+/* page 3 style is here  */
+.page3 h1 {
     color: #000;
+}
+
+.page4 {
+    height: 100vh;
 }

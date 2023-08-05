@@ -2,10 +2,24 @@ const cursor = document.querySelector('.cursor');
 const mainSec = document.querySelector('#main');
 
 mainSec.addEventListener('mousemove', function (dets) {
-    // console.log('hey')
+    cursor.style.left = dets.x + 'px'
+    cursor.style.top = dets.y + 'px'
+})
+
+const video1 = document.querySelector('#video1');
+
+video1.addEventListener('mouseenter', function (dets) {
+    // console.log(dets.x)
+    cursor.style.left = dets.x + 'px'
+    cursor.style.top = dets.y + 'px'
+    cursor.style.backgroundColor = "Red"
+
+})
+video1.addEventListener('mouseout', function (dets) {
     // console.log(dets.y)
     cursor.style.left = dets.x + 'px'
     cursor.style.top = dets.y + 'px'
+    cursor.style.backgroundColor = ""
 })
 
 
@@ -85,6 +99,6 @@ tl2.to("#main", {
 tl2.to(".page2 h1", {
     x: 300
 }, 'anim2')
-tl2.to(".cursor", {
-    backgroundColor: '#000',
-}, 'anim2')
+// tl2.to(".cursor", {
+//     backgroundColor: '#000',
+// }, 'anim2')
