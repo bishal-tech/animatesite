@@ -99,6 +99,18 @@ tl2.to("#main", {
 tl2.to(".page2 h1", {
     x: 300
 }, 'anim2')
-// tl2.to(".cursor", {
-//     backgroundColor: '#000',
-// }, 'anim2')
+
+const tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.page3',
+        scroller: '#main',
+        markers: true,
+        start: "top 1%",
+        end: "top 0%",
+        scrub: 3
+    }
+})
+tl3.to("#main", {
+    backgroundColor: "#000",
+    color: "#fff"
+}, 'anim3')

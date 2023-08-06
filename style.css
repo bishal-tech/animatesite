@@ -147,5 +147,62 @@ a {
 }
 
 .page4 {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 12rem;
+}
+
+.page4 img {
+    width: 30rem;
+}
+
+.elem {
+    /* margin-top: 12rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elem h2 {
+    font-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+
+}
+
+.elem h2:hover {
+    transform: translateY(-85px);
+    transition: all 0.3s ease-in-out;
+}
+
+.elem:hover img {
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.elem img {
+    width: 32rem;
+    height: 17rem;
+    opacity: 0;
+    transform: translateY(10%) rotate(2deg);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.elem img:nth-child(1) {
+    margin-top: -10rem;
+}
+
+.elem img:nth-child(3) {
+    margin-bottom: -10rem;
+    /* margin-left: -103px; */
+}
+
+.text-div {
+    /* background-color: #fad2ef; */
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
 }
