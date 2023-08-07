@@ -104,7 +104,7 @@ const tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: '.page3',
         scroller: '#main',
-        markers: true,
+        markers: false,
         start: "top 1%",
         end: "top 0%",
         scrub: 3

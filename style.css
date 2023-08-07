@@ -172,7 +172,7 @@ a {
 }
 
 .elem h2:hover {
-    transform: translateY(-85px);
+    transform: translateY(-63px);
     transition: all 0.3s ease-in-out;
 }
 
@@ -202,7 +202,7 @@ a {
 
 .text-div {
     /* background-color: #fad2ef; */
-    height: 80px;
+    height: 60px;
     width: 100%;
     overflow: hidden;
 }
